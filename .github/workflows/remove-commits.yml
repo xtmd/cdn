@@ -1,0 +1,20 @@
+name: remove commits
+on: 
+  schedule:
+    - cron: '1 0 1 * *'
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Remove all commits
+        run: |
+          git config --global user.email "f@fff.fan"
+          git config --global user.name "xtmd"
+          git checkout --orphan latest_branch
+          git add -A
+          git commit -am "no commits"
+          git branch -D main
+          git branch -m main
+          git push -f origin main
