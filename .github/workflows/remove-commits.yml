@@ -14,7 +14,11 @@ jobs:
           git config --global user.name "xtmd"
           git checkout --orphan latest_branch
           git add -A
+<<<<<<< HEAD
           git commit -am "remove commits"
+=======
+          git commit -am "no commits"
+>>>>>>> ace68e7235ce6fc85f5f40eac7953f44f7aeca9a
           git branch -D main
           git branch -m main
           git push -f origin main
