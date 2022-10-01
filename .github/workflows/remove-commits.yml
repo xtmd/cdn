@@ -12,7 +12,7 @@ jobs:
         run: |
           git config --global user.email "f@fff.fan"
           git config --global user.name "xtmd"
-          git checkout --orphan main
+          git checkout --orphan latest_branch
           git add -A
           git commit -am "remove commits"
           git push -f origin main
