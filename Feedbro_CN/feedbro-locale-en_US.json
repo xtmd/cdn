@@ -2,10 +2,10 @@
     "meta": {
         "manifest_version": 1,
         "locale_version": "1.0",
-        "locale_name": "English",
-        "locale_type": "en_US",
-        "locale_last_updated": "2019-10-18 12:00:00 UTC",
-        "locale_author_name": "Nodetics",
+        "locale_name": "Chinese",
+        "locale_type": "zh_CN",
+        "locale_last_updated": "2023-03-17 12:00:00 UTC",
+        "locale_author_name": "xtmd",
         "locale_author_email": "nodetics@gmail.com",
         "locale_source_url": "https://nodetics.com/feedbro/"
     },
