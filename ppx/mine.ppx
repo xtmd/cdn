@@ -8,8 +8,8 @@
 			<ExclusionList OnlyFromListMode="false">%ComputerName%; localhost; *.local</ExclusionList>
 			<DnsUdpMode>0</DnsUdpMode>
 		</Resolve>
-		<Encryption mode="master">
-			<Hash>AAICklUCE65XUxHuZFl0UllMLfH7+HF4eo0g2WlRvSQ6iuU=</Hash>
+		<Encryption mode="account">
+			<Hash>AAEBAAAA0Iyd3wEV0RGMegDAT8KX6wEAAADpgKv5KW4aQ5jAsH5qdwMOAAAAAAQAAABQAAAAEGYAAAABAAAgAAAAe1JbzuoEmxNLg69IOR2LXxYsA9pFsselDv4ZLX5NA9UAAAAADoAAAAACAAAgAAAAODyxbeh1K2uIUT5ZyTVqo4flPP6NF0RYga/oiXnBAYUQAAAAIr7TD11eFcUAX9P4wpcDE0AAAACWoD8+gfPtjOUylLFBf+bKUh/RzvJ8ViUkU9326Zc7JgOjUuiE7Fg5llvoirkE9P6psD5mY8bSIIMg0d0YHGE/</Hash>
 		</Encryption>
 		<ConnectionLoopDetection enabled="true" resolve="true" />
 		<Udp mode="mode_bypass" />
@@ -176,6 +176,11 @@
 		<Rule enabled="true">
 			<Action type="Proxy">101</Action>
 			<Targets>*.duckduckgo.com; </Targets>
+			<Name>New</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">101</Action>
+			<Targets>*.jsdelivr.net; </Targets>
 			<Name>New</Name>
 		</Rule>
 		<Rule enabled="true">
